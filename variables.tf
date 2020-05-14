@@ -180,3 +180,8 @@ variable "kubernetes_config_map_ignore_role_changes" {
   default     = true
   description = "Set to `true` to ignore IAM role changes in the Kubernetes Auth ConfigMap"
 }
+
+variable "provider_key_arn" {
+  type        = string
+  description = "KMS arn for envelop encryption"
+}
